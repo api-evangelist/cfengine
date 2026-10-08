@@ -1,0 +1,13 @@
+generated: '2026-10-08'
+method: searched
+probe: true
+source: https://cfengine.com/solutions/security-automation/
+url: https://cfengine.com/solutions/security-automation/
+certifications:
+- HIPAA
+- GDPR
+evidence:
+- source: https://cfengine.com/solutions/security-automation/
+  keywords:
+  - hipaa
+  - gdpr

@@ -1,0 +1,73 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:security@northern.tech
+Preferred-Languages: en
+Canonical: https://northern.tech/security.txt
+Hiring: https://northern.tech/careers/open-positions
+Expires: 2028-01-01T00:00:00z
+
+# Vulnerability disclosure policy
+
+# - Disclose security issues immediately to us
+# - If you discover a security issue, note down your findings, log out, and stop experimenting as this could damage other users and their data
+# - Attempts to access, change or delete other users' data is not allowed
+# - Do not use automated tools which result in high server load (such as brute forcing or (D)DoS approaches) against our production services and websites
+#   - Submissions using these approaches will be ignored and may result in your IP(s) being blocked
+# - Do not publicly disclose vulnerabilities without coordinating with us, even after the issue has been fixed
+#   - We have to follow a process of responsibly notifying our customers, giving them time to upgrade, etc.
+
+# Areas of interest
+
+# - Websites: https://northern.tech, https://cfengine.com, https://mender.io, https://alvaldi.com
+# - Online services: https://hosted.mender.io, https://app.alvaldi.com
+# - All maintained CFEngine releases
+# - All maintained Mender releases
+
+# Remuneration
+
+# - We evaluate whether something is a security issue and do not pay a reward in cases where we do not consider it a security issue
+# - We do not pay out rewards for previously known / reported issues, only the first report receives a reward
+# - The decision on severity and the reward amount is made solely by us
+# - The reward is paid out using Amazon gift cards (not PayPal)
+# We assign the severity and the according reward to the following levels:
+# ---------------------
+# | Severity | Reward |
+# ---------------------
+# | S1       | $500   |
+# | S2       | $250   |
+# | S3       | $100   |
+# | S4       | $50    |
+# ---------------------
+
+# The following issues are unlikely to receive a bounty on report
+
+# - Issues around rate limits
+# - Low impact information disclosures such as software version disclosure
+# - Clickjacking / UI redressing
+# - Subscription model bypass - issues giving access to paid features you seemingly should not have access to
+# - Incomplete or missing SPF/DMARC/DKIM records
+# - Missing Cookie flags
+# - Missing HTTP Strict Transport Security (HSTS) / Strict-Transport-Security HTTP header
+# - Vulnerabilities requiring the use of outdated browsers, plugins or platforms
+# - Vulnerabilities that require the user/victim to perform extremely unlikely actions (i.e. Self-XSS)
+# - IIS Tilde File and Directory Disclosure
+# - CSV Injection
+# - PHP Info
+-----BEGIN PGP SIGNATURE-----
+
+iQJPBAEBCAA5FiEEr+jF9DBXwAkxIimfWEIRr2qz7hIFAmrDoeIbFIAAAAAABAAO
+bWFudTIsMi41KzEuMTIsMCwzAAoJEFhCEa9qs+4S12gP/24PHjbIbKkZeQoJNuZk
+xXW8SPAeqN25ObJo1AUszrfqav8xY2MlU+1PPnWW+Os1HPPV8WwJUXLXoAC8FETc
+cBfmSkTPCI5LDpCRdjD8S7xZm1keVSSacaLznYjfZl+zxIoP8TawMQgjPjjU0W0h
+88F9ibnMiph4W545IGG6nQtrEpzLM5NuUxaqeDlSyjE3SPuIfpcAGCtbNsWn61E1
+kwWbIBOxR7ZxPshPY+8lCblNK6hc0QEN0tLuq0YWaLhN8m7OSSK51LCZks6dxeCB
+Hbr0N40kiieaHsJFrmDeLwq7gdbQ0D6JrmFGp6gNGAIq+IlEVkRr8qCj3gbkGaWx
+fQs+ddtIgqd/b6p1PkedpSIj1CWqGiVFGBIU+DtCsvFlsn00YMqptkuYwnR1AgBD
+qD3kSzgwx5sxVFQeHsf66Nq0oS2tsS7eB0zm2xGBS0vUsCWYcJXS5KOLGKcx4IoX
+4T5zFsRh0xmyARshBM4QZAf9wcSJwvj1+gh22R+xAb/weSOfFGNm0H1TD8wjXazI
+50/Q2hHHZd3/eD1DHI1r1IrwT8auBppKs9p4AsR5FCLDTtpWk97qIaLaTijdtFGP
+i7DI+lGrGAlbqiIS7264VSzIL1EZJ83uNa2FbOJuA7Mqdb8BWqNNRVTPf1XOG8yo
+zFxIT6RPVqpiRf+qfZUSESEr
+=eBcv
+-----END PGP SIGNATURE-----

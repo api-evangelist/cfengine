@@ -1,0 +1,244 @@
+generated: '2026-10-08'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/cfengine-openapi-generated.yml
+vocabulary:
+  name: Cfengine Domain Vocabulary
+  description: 'Terms declared by Cfengine''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-08'
+  terms:
+  - term: PostApiAiTextToSqlRequest
+    definition: 'Object declared by the contract with fields: question.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiAiTextToSqlRequest
+  - term: PostApiAiTextToSqlResponse
+    definition: 'Object declared by the contract with fields: explanation, sql, meta.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiAiTextToSqlResponse
+  - term: GetApiBuildModulesAutorunResponse
+    definition: 'Object declared by the contract with fields: name, readme, description, version, author, updated, downloads, repo, documentation,
+      website, subdirectory, commit. (4 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiBuildModulesAutorunResponse
+  - term: GetApiBuildModulesAutorun100Response
+    definition: 'Object declared by the contract with fields: name, readme, description, version, author, updated, downloads, repo, documentation,
+      website, subdirectory, commit. (4 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiBuildModulesAutorun100Response
+  - term: DeleteApiBuildProjects1ModulesAutorunResponse
+    definition: 'Object declared by the contract with fields: name, readme, description, version, author, updated, downloads, repo, documentation,
+      website, subdirectory, commit. (5 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/DeleteApiBuildProjects1ModulesAutorunResponse
+  - term: PatchApiBuildProjects1ModulesAutorunResponse
+    definition: 'Object declared by the contract with fields: name, readme, description, version, author, updated, downloads, repo, documentation,
+      website, subdirectory, commit. (5 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PatchApiBuildProjects1ModulesAutorunResponse
+  - term: PostApiBuildProjects1ModulesAutorunResponse
+    definition: 'Object declared by the contract with fields: name, readme, description, version, author, updated, downloads, repo, documentation,
+      website, subdirectory, commit. (5 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiBuildProjects1ModulesAutorunResponse
+  - term: GetApiBuildProjects1ModulesDeleteFilesInputResponse
+    definition: 'Object declared by the contract with fields: status, input_spec.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiBuildProjects1ModulesDeleteFilesInputResponse
+  - term: PostApiBuildProjects1ModulesDeleteFilesInputResponse
+    definition: 'Object declared by the contract with fields: status.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiBuildProjects1ModulesDeleteFilesInputResponse
+  - term: DeleteApiBuildProjects2Response
+    definition: 'Object declared by the contract with fields: status, details.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/DeleteApiBuildProjects2Response
+  - term: GetApiBuildProjects2Response
+    definition: 'Object declared by the contract with fields: id, repository_url, branch, name, authentication_type, username, is_empty, created_at,
+      pushed_at, ssh_key_id, password, ssh_private_key.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiBuildProjects2Response
+  - term: PatchApiBuildProjects2Response
+    definition: 'Object declared by the contract with fields: id.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PatchApiBuildProjects2Response
+  - term: PostApiBuildProjects2RefreshResponse
+    definition: 'Object declared by the contract with fields: status, details.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiBuildProjects2RefreshResponse
+  - term: GetApiBuildProjects5ModulesResponse
+    definition: 'Object declared by the contract with fields: name, description, tags, repo, by, version, commit, added_by, steps, subdirectory,
+      isExternal, availableVersion.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiBuildProjects5ModulesResponse
+  - term: PostApiBuildProjectsProjectidResponse
+    definition: 'Object declared by the contract with fields: status, details.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiBuildProjectsProjectidResponse
+  - term: GetApiBuildBuildidResponse
+    definition: 'Object declared by the contract with fields: name, readme, description, version, author, updated, downloads, repo, documentation,
+      website, subdirectory, commit. (5 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiBuildBuildidResponse
+  - term: PostApiBuildBuildidResponse
+    definition: 'Object declared by the contract with fields: name, readme, description, version, author, updated, downloads, repo, documentation,
+      website, subdirectory, commit. (4 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiBuildBuildidResponse
+  - term: GetApiCmdbV2HostkeyResponse
+    definition: 'Object declared by the contract with fields: data, meta.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiCmdbV2HostkeyResponse
+  - term: PostApiCmdbV2HostkeyRequest
+    definition: 'Object declared by the contract with fields: type, name, description, tags, meta, entries.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiCmdbV2HostkeyRequest
+  - term: PostApiCmdbV2HostkeyResponse
+    definition: 'Object declared by the contract with fields: id.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiCmdbV2HostkeyResponse
+  - term: GetApiCmdbV2HostkeyHostkeyidResponse
+    definition: 'Object declared by the contract with fields: classes, variables.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiCmdbV2HostkeyHostkeyidResponse
+  - term: GetApiCmdbV2SubentryHostkeyTypeNameResponse
+    definition: 'Object declared by the contract with fields: id, entry_id, item_name, item_value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiCmdbV2SubentryHostkeyTypeNameResponse
+  - term: DeleteApiHostsDeletePermanentlySha2123F85B38189008Ae12Be159F
+    definition: 'Object declared by the contract with fields: meta, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/DeleteApiHostsDeletePermanentlySha2123F85B38189008Ae12Be159F
+  - term: PostApiHostsRestoreDeletedSha2123F85B38189008Ae12Be159Fb9615
+    definition: 'Object declared by the contract with fields: meta, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiHostsRestoreDeletedSha2123F85B38189008Ae12Be159Fb9615
+  - term: GetApiHostsHostidResponse
+    definition: 'Object declared by the contract with fields: 10_0_2_15, 127_0_0_1, ubuntu_16.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiHostsHostidResponse
+  - term: GetApiInventoryAttributesDictionaryResponse
+    definition: 'Object declared by the contract with fields: id, attribute_name, category, readonly, type, convert_function, keyname.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiInventoryAttributesDictionaryResponse
+  - term: PatchApiInventoryAttributesDictionaryAttributesdictionaryidR
+    definition: 'Object declared by the contract with fields: category, type.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PatchApiInventoryAttributesDictionaryAttributesdictionaryidR
+  - term: PatchApiInventoryAttributesDictionaryAttributesdictionaryidR2
+    definition: 'Object declared by the contract with fields: id, attribute_name, category, readonly, type, convert_function.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PatchApiInventoryAttributesDictionaryAttributesdictionaryidR2
+  - term: GetApiRbacUserPermissionsResponse
+    definition: 'Object declared by the contract with fields: alias, group, name, description, application, allowed_by_default.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiRbacUserPermissionsResponse
+  - term: GetApiRoleRoleidResponse
+    definition: 'Object declared by the contract with fields: id, description, includeContext, excludeContext.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiRoleRoleidResponse
+  - term: PostApiRoleRoleidRequest
+    definition: 'Object declared by the contract with fields: description, includeContext, excludeContext.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiRoleRoleidRequest
+  - term: PutApiRoleRoleidRequest
+    definition: 'Object declared by the contract with fields: description, includeContext, excludeContext.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PutApiRoleRoleidRequest
+  - term: DeleteApiRoleRolenamePermissionsResponse
+    definition: 'Object declared by the contract with fields: status.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/DeleteApiRoleRolenamePermissionsResponse
+  - term: GetApiRoleRolenamePermissionsResponse
+    definition: 'Object declared by the contract with fields: alias, group, name, description, application, allowed_by_default.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiRoleRolenamePermissionsResponse
+  - term: PostApiRoleRolenamePermissionsRequest
+    definition: 'Object declared by the contract with fields: alias.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiRoleRolenamePermissionsRequest
+  - term: PostApiRoleRolenamePermissionsResponse
+    definition: 'Object declared by the contract with fields: status.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiRoleRolenamePermissionsResponse
+  - term: PutApiRoleRolenamePermissionsRequest
+    definition: 'Object declared by the contract with fields: alias.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PutApiRoleRolenamePermissionsRequest
+  - term: PutApiRoleRolenamePermissionsResponse
+    definition: 'Object declared by the contract with fields: status.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PutApiRoleRolenamePermissionsResponse
+  - term: GetApiUserUsernameResponse
+    definition: 'Object declared by the contract with fields: id, email, roles, external, time_zone, two_factor_enabled.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiUserUsernameResponse
+  - term: PostApiUserUsernameRequest
+    definition: 'Object declared by the contract with fields: password, email, roles, time_zone.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiUserUsernameRequest
+  - term: PutApiUserUsernameRequest
+    definition: 'Object declared by the contract with fields: password, email, roles, time_zone.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PutApiUserUsernameRequest
+  - term: PostApiUserUsernameUnlockResponse
+    definition: 'Object declared by the contract with fields: 202.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiUserUsernameUnlockResponse
+  - term: GetApiApiidResponse
+    definition: 'Object declared by the contract with fields: alias, group, name, description, application, allowed_by_default.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiApiidResponse
+  - term: PostApiApiidRequest
+    definition: 'Object declared by the contract with fields: period, from, to.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiApiidRequest
+  - term: PostApiApiidResponse
+    definition: 'Object declared by the contract with fields: period, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/PostApiApiidResponse

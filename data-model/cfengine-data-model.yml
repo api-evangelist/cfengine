@@ -1,0 +1,102 @@
+generated: '2026-10-08'
+method: derived
+generator: derive-data-model.py
+source:
+- openapi/_ae-authored/cfengine-openapi-generated.yml
+notation: has_one = property $ref; has_many = array of $ref; belongs_to = <entity>_id field
+summary:
+  entities: 45
+  entities_in_spec: 45
+  relationships: 0
+entities:
+- name: DeleteApiBuildProjects1ModulesAutorunResponse
+  fields: 17
+- name: DeleteApiBuildProjects2Response
+  fields: 2
+- name: DeleteApiHostsDeletePermanentlySha2123F85B38189008Ae12Be159F
+  fields: 2
+- name: DeleteApiRoleRolenamePermissionsResponse
+  fields: 1
+- name: GetApiApiidResponse
+  fields: 6
+- name: GetApiBuildBuildidResponse
+  fields: 17
+- name: GetApiBuildModulesAutorun100Response
+  fields: 16
+- name: GetApiBuildModulesAutorunResponse
+  fields: 16
+- name: GetApiBuildProjects1ModulesDeleteFilesInputResponse
+  fields: 2
+- name: GetApiBuildProjects2Response
+  fields: 12
+- name: GetApiBuildProjects5ModulesResponse
+  fields: 12
+- name: GetApiCmdbV2HostkeyHostkeyidResponse
+  fields: 2
+- name: GetApiCmdbV2HostkeyResponse
+  fields: 2
+- name: GetApiCmdbV2SubentryHostkeyTypeNameResponse
+  fields: 4
+- name: GetApiHostsHostidResponse
+  fields: 3
+- name: GetApiInventoryAttributesDictionaryResponse
+  fields: 7
+- name: GetApiRbacUserPermissionsResponse
+  fields: 6
+- name: GetApiRoleRoleidResponse
+  fields: 4
+- name: GetApiRoleRolenamePermissionsResponse
+  fields: 6
+- name: GetApiUserUsernameResponse
+  fields: 6
+- name: PatchApiBuildProjects1ModulesAutorunResponse
+  fields: 17
+- name: PatchApiBuildProjects2Response
+  fields: 1
+- name: PatchApiInventoryAttributesDictionaryAttributesdictionaryidR
+  fields: 2
+- name: PatchApiInventoryAttributesDictionaryAttributesdictionaryidR2
+  fields: 6
+- name: PostApiAiTextToSqlRequest
+  fields: 1
+- name: PostApiAiTextToSqlResponse
+  fields: 3
+- name: PostApiApiidRequest
+  fields: 3
+- name: PostApiApiidResponse
+  fields: 2
+- name: PostApiBuildBuildidResponse
+  fields: 16
+- name: PostApiBuildProjects1ModulesAutorunResponse
+  fields: 17
+- name: PostApiBuildProjects1ModulesDeleteFilesInputResponse
+  fields: 1
+- name: PostApiBuildProjects2RefreshResponse
+  fields: 2
+- name: PostApiBuildProjectsProjectidResponse
+  fields: 2
+- name: PostApiCmdbV2HostkeyRequest
+  fields: 6
+- name: PostApiCmdbV2HostkeyResponse
+  fields: 1
+- name: PostApiHostsRestoreDeletedSha2123F85B38189008Ae12Be159Fb9615
+  fields: 2
+- name: PostApiRoleRoleidRequest
+  fields: 3
+- name: PostApiRoleRolenamePermissionsRequest
+  fields: 1
+- name: PostApiRoleRolenamePermissionsResponse
+  fields: 1
+- name: PostApiUserUsernameRequest
+  fields: 4
+- name: PostApiUserUsernameUnlockResponse
+  fields: 1
+- name: PutApiRoleRoleidRequest
+  fields: 3
+- name: PutApiRoleRolenamePermissionsRequest
+  fields: 1
+- name: PutApiRoleRolenamePermissionsResponse
+  fields: 1
+- name: PutApiUserUsernameRequest
+  fields: 4
+relationships: []

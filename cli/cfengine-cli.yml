@@ -1,0 +1,26 @@
+generated: '2026-10-08'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.cfengine.com/docs/lts/examples/tutorials/cfbs/
+sources:
+- https://docs.cfengine.com/docs/lts/examples/tutorials/cfbs/
+- https://docs.cfengine.com/docs/lts/examples/tutorials/policy-writing/authoring-policy-tools-and-workflow/
+install:
+- method: package
+  command: sudo cfbs install
+commands:
+- group: cfbs
+  commands:
+  - cfbs init
+  - cfbs status
+  - cfbs add <module-name>
+  - cfbs add every-minute
+  - cfbs add inventory-sudoers
+  - cfbs add compliance-report-os-is-vendor-supported
+  - cfbs build
+- group: cf-remote
+  commands:
+  - cf-remote deploy
+  - cf-remote save -H root@192.168.56.2 --role hub --name hub
+binary: cfbs
+docs: https://docs.cfengine.com/docs/lts/examples/tutorials/cfbs/

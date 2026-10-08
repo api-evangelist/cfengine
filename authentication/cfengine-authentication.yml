@@ -1,0 +1,28 @@
+generated: '2026-10-08'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
+sources:
+- https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
+- https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/two-factor-authentication/
+- https://docs.cfengine.com/docs/lts/web-ui/hub_administration/reset-admin-creds/
+- https://docs.cfengine.com/docs/lts/getting-started/
+description: Authentication methods for CFEngine APIs
+schemes:
+- type: apiKey
+  name: api_token
+  evidence: 'Headers: Authorization: api_token (string) Set token to access api. To get the token please look at - /var/cfengine/httpd/htdocs/ldap/config/settings.php'
+  location: header
+  header: Authorization
+- type: http-basic
+  name: Basic
+  evidence: Basic authentication also requires this header each time it is used.
+  location: header
+  header: Authorization
+- type: http-bearer
+  name: Bearer
+  evidence: 'Example request (curl): curl -X GET https://hub.cfengine.com/api/2fa/verification-needed --header ''Authorization: Bearer 627135e5a0b142cfdc738c38ad0c0067bc0960e5'''
+  location: header
+  header: Authorization
+note: No OAuth flow details or scopes are documented on the provided pages.
+docs: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/

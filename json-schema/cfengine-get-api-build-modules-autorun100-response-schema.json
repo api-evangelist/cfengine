@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/cfengine/main/json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json",
+  "title": "GetApiBuildModulesAutorun100Response",
+  "x-generated": "2026-10-08",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/cfengine-openapi-generated.yml#/components/schemas/GetApiBuildModulesAutorun100Response",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "readme": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "downloads": {
+      "type": "integer"
+    },
+    "repo": {
+      "type": "string"
+    },
+    "documentation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "website": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "subdirectory": {
+      "type": "string"
+    },
+    "commit": {
+      "type": "string"
+    },
+    "dependencies": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "1.0.0": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "latest": {
+              "type": "boolean"
+            }
+          }
+        },
+        "1.0.1": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "latest": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "latest": {
+      "type": "boolean"
+    }
+  }
+}

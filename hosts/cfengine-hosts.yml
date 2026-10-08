@@ -1,0 +1,114 @@
+generated: '2026-10-08'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 6
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - docs
+  - other
+  - source
+  - website
+hosts:
+- host: api.cfengine.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: cfengine.com
+  role: api
+  relation: own
+- host: build.cfengine.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: cfengine.com
+  role: other
+  relation: own
+- host: cfengine.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Compliance
+  - Security
+  - DeveloperPortal
+  - Website
+  - Blog
+  - Support
+  serves:
+  - docs
+  registrable_domain: cfengine.com
+  role: website
+  relation: own
+- host: dev.cfengine.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  title: Jira
+  status: 200
+  registrable_domain: cfengine.com
+  role: other
+  relation: own
+- host: docs.cfengine.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - ChangeLog
+  - APIReference
+  - Documentation
+  - GettingStarted
+  serves:
+  - docs
+  registrable_domain: cfengine.com
+  role: docs
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: hub.cfengine.com
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: cfengine.com
+  role: other
+  relation: own
+- host: northerntech.atlassian.net
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: atlassian.net
+  role: other
+  relation: other-domain

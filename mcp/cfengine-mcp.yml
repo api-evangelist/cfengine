@@ -1,0 +1,214 @@
+generated: '2026-10-08'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/cfengine-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on api.cfengine.com, docs.cfengine.com, cfengine.com, build.cfengine.com;
+  verdict absent. Candidate tools below are derived from the 44 operation(s) in the provider's own OpenAPI (40 listed); they describe what a server
+  WOULD expose, not one that exists.
+tools:
+- name: post_api_ai_text_to_sql
+  operationId: post_api_ai_text_to_sql
+  method: POST
+  path: /api/ai/text-to-sql
+  description: POST /api/ai/text-to-sql
+- name: get_api_build_modules_autorun
+  operationId: get_api_build_modules_autorun
+  method: GET
+  path: /api/build/modules/autorun
+  description: GET /api/build/modules/autorun
+- name: get_api_build_modules_autorun_1_0_0
+  operationId: get_api_build_modules_autorun_1_0_0
+  method: GET
+  path: /api/build/modules/autorun/1.0.0
+  description: GET /api/build/modules/autorun/1.0.0
+- name: delete_api_build_projects_1_modules_autorun
+  operationId: delete_api_build_projects_1_modules_autorun
+  method: DELETE
+  path: /api/build/projects/1/modules/autorun
+  description: DELETE /api/build/projects/1/modules/autorun
+- name: patch_api_build_projects_1_modules_autorun
+  operationId: patch_api_build_projects_1_modules_autorun
+  method: PATCH
+  path: /api/build/projects/1/modules/autorun
+  description: PATCH /api/build/projects/1/modules/autorun
+- name: post_api_build_projects_1_modules_autorun
+  operationId: post_api_build_projects_1_modules_autorun
+  method: POST
+  path: /api/build/projects/1/modules/autorun
+  description: POST /api/build/projects/1/modules/autorun
+- name: get_api_build_projects_1_modules_delete_files_input
+  operationId: get_api_build_projects_1_modules_delete_files_input
+  method: GET
+  path: /api/build/projects/1/modules/delete-files/input
+  description: GET /api/build/projects/1/modules/delete-files/input
+- name: post_api_build_projects_1_modules_delete_files_input
+  operationId: post_api_build_projects_1_modules_delete_files_input
+  method: POST
+  path: /api/build/projects/1/modules/delete-files/input
+  description: POST /api/build/projects/1/modules/delete-files/input
+- name: delete_api_build_projects_2
+  operationId: delete_api_build_projects_2
+  method: DELETE
+  path: /api/build/projects/2
+  description: DELETE /api/build/projects/2
+- name: get_api_build_projects_2
+  operationId: get_api_build_projects_2
+  method: GET
+  path: /api/build/projects/2
+  description: GET /api/build/projects/2
+- name: patch_api_build_projects_2
+  operationId: patch_api_build_projects_2
+  method: PATCH
+  path: /api/build/projects/2
+  description: PATCH /api/build/projects/2
+- name: post_api_build_projects_2_refresh
+  operationId: post_api_build_projects_2_refresh
+  method: POST
+  path: /api/build/projects/2/refresh
+  description: POST /api/build/projects/2/refresh
+- name: get_api_build_projects_5_modules
+  operationId: get_api_build_projects_5_modules
+  method: GET
+  path: /api/build/projects/5/modules
+  description: GET /api/build/projects/5/modules
+- name: post_api_build_projects_projectid
+  operationId: post_api_build_projects_projectid
+  method: POST
+  path: /api/build/projects/{projectid}
+  description: POST /api/build/projects/2
+- name: get_api_build_buildid
+  operationId: get_api_build_buildid
+  method: GET
+  path: /api/build/{buildid}
+  description: GET /api/build/{buildid}
+- name: post_api_build_buildid
+  operationId: post_api_build_buildid
+  method: POST
+  path: /api/build/{buildid}
+  description: POST /api/build/{buildid}
+- name: get_api_cmdb_v2_hostkey
+  operationId: get_api_cmdb_v2_hostkey
+  method: GET
+  path: /api/cmdb/v2/{hostkey}
+  description: Get all configuration entries for a specific host.
+- name: post_api_cmdb_v2_hostkey
+  operationId: post_api_cmdb_v2_hostkey
+  method: POST
+  path: /api/cmdb/v2/{hostkey}
+  description: Create a new configuration entry for a host.
+- name: get_api_cmdb_v2_hostkey_hostkeyid
+  operationId: get_api_cmdb_v2_hostkey_hostkeyid
+  method: GET
+  path: /api/cmdb/v2/{hostkey}/{hostkeyid}
+  description: Get the rendered JSON configuration file for a host.
+- name: get_api_cmdb_v2_subentry_hostkey_type_name
+  operationId: get_api_cmdb_v2_subentry_hostkey_type_name
+  method: GET
+  path: /api/cmdb/v2/subentry/{hostkey}/{type}/{name}
+  description: Get a specific sub-entry by type and name.
+- name: delete_api_hosts_delete_permanently_sha
+  operationId: delete_api_hosts_delete_permanently_SHA
+  method: DELETE
+  path: /api/hosts/delete-permanently/SHA
+  description: Host REST API
+- name: delete_api_hosts_delete_permanently_sha_2123f85b38189008ae12
+  operationId: delete_api_hosts_delete_permanently_SHA_2123f85b38189008ae12be159fb961584dda1249
+  method: DELETE
+  path: /api/hosts/delete-permanently/SHA=2123f85b38189008ae12be159fb961584dda1249c94efed43fec2c70f233975d
+  description: DELETE /api/hosts/delete-permanently/SHA=2123f85b38189008ae12be159fb961584dda1249c94efed43fec2c70f233975d
+- name: post_api_hosts_restore_deleted_sha
+  operationId: post_api_hosts_restore_deleted_SHA
+  method: POST
+  path: /api/hosts/restore-deleted/SHA
+  description: Host REST API
+- name: post_api_hosts_restore_deleted_sha_2123f85b38189008ae12be159
+  operationId: post_api_hosts_restore_deleted_SHA_2123f85b38189008ae12be159fb961584dda1249c94ef
+  method: POST
+  path: /api/hosts/restore-deleted/SHA=2123f85b38189008ae12be159fb961584dda1249c94efed43fec2c70f233975d
+  description: POST /api/hosts/restore-deleted/SHA=2123f85b38189008ae12be159fb961584dda1249c94efed43fec2c70f233975d
+- name: get_api_hosts_hostid
+  operationId: get_api_hosts_hostid
+  method: GET
+  path: /api/hosts/{hostid}
+  description: GET /api/hosts/{hostid}
+- name: get_api_hosts_hostid_sha_2123f85b38189008ae12be159fb961584dd
+  operationId: get_api_hosts_hostid_SHA_2123f85b38189008ae12be159fb961584dda1249c94efed43fec2c7
+  method: GET
+  path: /api/hosts/{hostid}/SHA=2123f85b38189008ae12be159fb961584dda1249c94efed43fec2c70f233975d
+  description: Host REST API
+- name: get_api_inventory_attributes_dictionary
+  operationId: get_api_inventory_attributes_dictionary
+  method: GET
+  path: /api/inventory/attributes-dictionary
+  description: GET /api/inventory/attributes-dictionary
+- name: patch_api_inventory_attributes_dictionary_attributesdictiona
+  operationId: patch_api_inventory_attributes_dictionary_attributesdictionaryid
+  method: PATCH
+  path: /api/inventory/attributes-dictionary/{attributesdictionaryid}
+  description: PATCH /api/inventory/attributes-dictionary/{attributesDictionaryId}
+- name: get_api_rbac_user_permissions
+  operationId: get_api_rbac_user_permissions
+  method: GET
+  path: /api/rbac/user-permissions
+  description: GET /api/rbac/user-permissions
+- name: delete_api_role_role_id
+  operationId: delete_api_role_roleId
+  method: DELETE
+  path: /api/role/{roleId}
+  description: Remove role definition.
+- name: get_api_role_role_id
+  operationId: get_api_role_roleId
+  method: GET
+  path: /api/role/{roleId}
+  description: Get role definition.
+- name: post_api_role_role_id
+  operationId: post_api_role_roleId
+  method: POST
+  path: /api/role/{roleId}
+  description: Update role definition.
+- name: put_api_role_role_id
+  operationId: put_api_role_roleId
+  method: PUT
+  path: /api/role/{roleId}
+  description: Create a new role definition.
+- name: delete_api_role_role_name_permissions
+  operationId: delete_api_role_roleName_permissions
+  method: DELETE
+  path: /api/role/{roleName}/permissions
+  description: Revoke permissions from role
+- name: get_api_role_role_name_permissions
+  operationId: get_api_role_roleName_permissions
+  method: GET
+  path: /api/role/{roleName}/permissions
+  description: Get role permissions
+- name: post_api_role_role_name_permissions
+  operationId: post_api_role_roleName_permissions
+  method: POST
+  path: /api/role/{roleName}/permissions
+  description: Add permissions to role
+- name: put_api_role_role_name_permissions
+  operationId: put_api_role_roleName_permissions
+  method: PUT
+  path: /api/role/{roleName}/permissions
+  description: Rewrite role’s permissions
+- name: delete_api_user_username
+  operationId: delete_api_user_username
+  method: DELETE
+  path: /api/user/{username}
+  description: Remove internal user.
+- name: get_api_user_username
+  operationId: get_api_user_username
+  method: GET
+  path: /api/user/{username}
+  description: Get info for a specified user.
+- name: post_api_user_username
+  operationId: post_api_user_username
+  method: POST
+  path: /api/user/{username}
+  description: Update user information.

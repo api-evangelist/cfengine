@@ -1,0 +1,327 @@
+{
+  "@context": {
+    "@vocab": "https://cfengine.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "cfengine": "https://cfengine.com/schema#",
+    "PostApiAiTextToSqlRequest": "cfengine:PostApiAiTextToSqlRequest",
+    "question": {
+      "@id": "cfengine:question",
+      "@type": "xsd:string"
+    },
+    "PostApiAiTextToSqlResponse": "cfengine:PostApiAiTextToSqlResponse",
+    "explanation": {
+      "@id": "cfengine:explanation",
+      "@type": "xsd:string"
+    },
+    "sql": {
+      "@id": "cfengine:sql",
+      "@type": "xsd:string"
+    },
+    "meta": {
+      "@id": "cfengine:meta"
+    },
+    "GetApiBuildModulesAutorunResponse": "cfengine:GetApiBuildModulesAutorunResponse",
+    "name": {
+      "@id": "cfengine:name",
+      "@type": "xsd:string"
+    },
+    "readme": {
+      "@id": "cfengine:readme",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "cfengine:description",
+      "@type": "xsd:string"
+    },
+    "version": {
+      "@id": "cfengine:version",
+      "@type": "xsd:string"
+    },
+    "author": {
+      "@id": "cfengine:author"
+    },
+    "updated": {
+      "@id": "cfengine:updated",
+      "@type": "xsd:dateTime"
+    },
+    "downloads": {
+      "@id": "cfengine:downloads",
+      "@type": "xsd:integer"
+    },
+    "repo": {
+      "@id": "cfengine:repo",
+      "@type": "xsd:string"
+    },
+    "documentation": {
+      "@id": "cfengine:documentation",
+      "@type": "xsd:string"
+    },
+    "website": {
+      "@id": "cfengine:website",
+      "@type": "xsd:string"
+    },
+    "subdirectory": {
+      "@id": "cfengine:subdirectory",
+      "@type": "xsd:string"
+    },
+    "commit": {
+      "@id": "cfengine:commit",
+      "@type": "xsd:string"
+    },
+    "dependencies": {
+      "@id": "cfengine:dependencies",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "cfengine:tags",
+      "@type": "xsd:string"
+    },
+    "versions": {
+      "@id": "cfengine:versions"
+    },
+    "latest": {
+      "@id": "cfengine:latest",
+      "@type": "xsd:boolean"
+    },
+    "GetApiBuildModulesAutorun100Response": "cfengine:GetApiBuildModulesAutorun100Response",
+    "DeleteApiBuildProjects1ModulesAutorunResponse": "cfengine:DeleteApiBuildProjects1ModulesAutorunResponse",
+    "ts_vector": {
+      "@id": "cfengine:ts_vector",
+      "@type": "xsd:string"
+    },
+    "PatchApiBuildProjects1ModulesAutorunResponse": "cfengine:PatchApiBuildProjects1ModulesAutorunResponse",
+    "PostApiBuildProjects1ModulesAutorunResponse": "cfengine:PostApiBuildProjects1ModulesAutorunResponse",
+    "GetApiBuildProjects1ModulesDeleteFilesInputResponse": "cfengine:GetApiBuildProjects1ModulesDeleteFilesInputResponse",
+    "status": {
+      "@id": "cfengine:status",
+      "@type": "xsd:string"
+    },
+    "input_spec": {
+      "@id": "cfengine:input_spec",
+      "@container": "@list"
+    },
+    "PostApiBuildProjects1ModulesDeleteFilesInputResponse": "cfengine:PostApiBuildProjects1ModulesDeleteFilesInputResponse",
+    "DeleteApiBuildProjects2Response": "cfengine:DeleteApiBuildProjects2Response",
+    "details": {
+      "@id": "cfengine:details",
+      "@container": "@list"
+    },
+    "GetApiBuildProjects2Response": "cfengine:GetApiBuildProjects2Response",
+    "id": {
+      "@id": "cfengine:id",
+      "@type": "xsd:integer"
+    },
+    "repository_url": {
+      "@id": "cfengine:repository_url",
+      "@type": "xsd:string"
+    },
+    "branch": {
+      "@id": "cfengine:branch",
+      "@type": "xsd:string"
+    },
+    "authentication_type": {
+      "@id": "cfengine:authentication_type",
+      "@type": "xsd:string"
+    },
+    "username": {
+      "@id": "cfengine:username",
+      "@type": "xsd:string"
+    },
+    "is_empty": {
+      "@id": "cfengine:is_empty",
+      "@type": "xsd:boolean"
+    },
+    "created_at": {
+      "@id": "cfengine:created_at",
+      "@type": "xsd:dateTime"
+    },
+    "pushed_at": {
+      "@id": "cfengine:pushed_at",
+      "@type": "xsd:string"
+    },
+    "ssh_key_id": {
+      "@id": "cfengine:ssh_key_id",
+      "@type": "xsd:string"
+    },
+    "password": {
+      "@id": "cfengine:password",
+      "@type": "xsd:string"
+    },
+    "ssh_private_key": {
+      "@id": "cfengine:ssh_private_key",
+      "@type": "xsd:string"
+    },
+    "PatchApiBuildProjects2Response": "cfengine:PatchApiBuildProjects2Response",
+    "PostApiBuildProjects2RefreshResponse": "cfengine:PostApiBuildProjects2RefreshResponse",
+    "GetApiBuildProjects5ModulesResponse": "cfengine:GetApiBuildProjects5ModulesResponse",
+    "by": {
+      "@id": "cfengine:by",
+      "@type": "xsd:string"
+    },
+    "added_by": {
+      "@id": "cfengine:added_by",
+      "@type": "xsd:string"
+    },
+    "steps": {
+      "@id": "cfengine:steps",
+      "@container": "@list"
+    },
+    "isExternal": {
+      "@id": "cfengine:isExternal",
+      "@type": "xsd:boolean"
+    },
+    "availableVersion": {
+      "@id": "cfengine:availableVersion",
+      "@type": "xsd:string"
+    },
+    "PostApiBuildProjectsProjectidResponse": "cfengine:PostApiBuildProjectsProjectidResponse",
+    "GetApiBuildBuildidResponse": "cfengine:GetApiBuildBuildidResponse",
+    "PostApiBuildBuildidResponse": "cfengine:PostApiBuildBuildidResponse",
+    "GetApiCmdbV2HostkeyResponse": "cfengine:GetApiCmdbV2HostkeyResponse",
+    "data": {
+      "@id": "cfengine:data",
+      "@container": "@list"
+    },
+    "PostApiCmdbV2HostkeyRequest": "cfengine:PostApiCmdbV2HostkeyRequest",
+    "type": {
+      "@id": "cfengine:type",
+      "@type": "xsd:string"
+    },
+    "entries": {
+      "@id": "cfengine:entries",
+      "@container": "@list"
+    },
+    "PostApiCmdbV2HostkeyResponse": "cfengine:PostApiCmdbV2HostkeyResponse",
+    "GetApiCmdbV2HostkeyHostkeyidResponse": "cfengine:GetApiCmdbV2HostkeyHostkeyidResponse",
+    "classes": {
+      "@id": "cfengine:classes"
+    },
+    "variables": {
+      "@id": "cfengine:variables"
+    },
+    "GetApiCmdbV2SubentryHostkeyTypeNameResponse": "cfengine:GetApiCmdbV2SubentryHostkeyTypeNameResponse",
+    "entry_id": {
+      "@id": "cfengine:entry_id",
+      "@type": "xsd:integer"
+    },
+    "item_name": {
+      "@id": "cfengine:item_name",
+      "@type": "xsd:string"
+    },
+    "item_value": {
+      "@id": "cfengine:item_value",
+      "@type": "xsd:string"
+    },
+    "DeleteApiHostsDeletePermanentlySha2123F85B38189008Ae12Be159F": "cfengine:DeleteApiHostsDeletePermanentlySha2123F85B38189008Ae12Be159F",
+    "PostApiHostsRestoreDeletedSha2123F85B38189008Ae12Be159Fb9615": "cfengine:PostApiHostsRestoreDeletedSha2123F85B38189008Ae12Be159Fb9615",
+    "GetApiHostsHostidResponse": "cfengine:GetApiHostsHostidResponse",
+    "ubuntu_16": {
+      "@id": "cfengine:ubuntu_16"
+    },
+    "GetApiInventoryAttributesDictionaryResponse": "cfengine:GetApiInventoryAttributesDictionaryResponse",
+    "attribute_name": {
+      "@id": "cfengine:attribute_name",
+      "@type": "xsd:string"
+    },
+    "category": {
+      "@id": "cfengine:category",
+      "@type": "xsd:string"
+    },
+    "readonly": {
+      "@id": "cfengine:readonly",
+      "@type": "xsd:integer"
+    },
+    "convert_function": {
+      "@id": "cfengine:convert_function",
+      "@type": "xsd:string"
+    },
+    "keyname": {
+      "@id": "cfengine:keyname",
+      "@type": "xsd:string"
+    },
+    "PatchApiInventoryAttributesDictionaryAttributesdictionaryidR": "cfengine:PatchApiInventoryAttributesDictionaryAttributesdictionaryidR",
+    "PatchApiInventoryAttributesDictionaryAttributesdictionaryidR2": "cfengine:PatchApiInventoryAttributesDictionaryAttributesdictionaryidR2",
+    "GetApiRbacUserPermissionsResponse": "cfengine:GetApiRbacUserPermissionsResponse",
+    "alias": {
+      "@id": "cfengine:alias",
+      "@type": "xsd:string"
+    },
+    "group": {
+      "@id": "cfengine:group",
+      "@type": "xsd:string"
+    },
+    "application": {
+      "@id": "cfengine:application",
+      "@type": "xsd:string"
+    },
+    "allowed_by_default": {
+      "@id": "cfengine:allowed_by_default",
+      "@type": "xsd:boolean"
+    },
+    "GetApiRoleRoleidResponse": "cfengine:GetApiRoleRoleidResponse",
+    "includeContext": {
+      "@id": "cfengine:includeContext",
+      "@type": "xsd:string"
+    },
+    "excludeContext": {
+      "@id": "cfengine:excludeContext",
+      "@type": "xsd:string"
+    },
+    "PostApiRoleRoleidRequest": "cfengine:PostApiRoleRoleidRequest",
+    "PutApiRoleRoleidRequest": "cfengine:PutApiRoleRoleidRequest",
+    "DeleteApiRoleRolenamePermissionsResponse": "cfengine:DeleteApiRoleRolenamePermissionsResponse",
+    "GetApiRoleRolenamePermissionsResponse": "cfengine:GetApiRoleRolenamePermissionsResponse",
+    "PostApiRoleRolenamePermissionsRequest": "cfengine:PostApiRoleRolenamePermissionsRequest",
+    "PostApiRoleRolenamePermissionsResponse": "cfengine:PostApiRoleRolenamePermissionsResponse",
+    "PutApiRoleRolenamePermissionsRequest": "cfengine:PutApiRoleRolenamePermissionsRequest",
+    "PutApiRoleRolenamePermissionsResponse": "cfengine:PutApiRoleRolenamePermissionsResponse",
+    "GetApiUserUsernameResponse": "cfengine:GetApiUserUsernameResponse",
+    "email": {
+      "@id": "cfengine:email",
+      "@type": "xsd:string"
+    },
+    "roles": {
+      "@id": "cfengine:roles",
+      "@type": "xsd:string"
+    },
+    "external": {
+      "@id": "cfengine:external",
+      "@type": "xsd:string"
+    },
+    "time_zone": {
+      "@id": "cfengine:time_zone",
+      "@type": "xsd:string"
+    },
+    "two_factor_enabled": {
+      "@id": "cfengine:two_factor_enabled",
+      "@type": "xsd:string"
+    },
+    "PostApiUserUsernameRequest": "cfengine:PostApiUserUsernameRequest",
+    "PutApiUserUsernameRequest": "cfengine:PutApiUserUsernameRequest",
+    "PostApiUserUsernameUnlockResponse": "cfengine:PostApiUserUsernameUnlockResponse",
+    "GetApiApiidResponse": "cfengine:GetApiApiidResponse",
+    "PostApiApiidRequest": "cfengine:PostApiApiidRequest",
+    "period": {
+      "@id": "cfengine:period",
+      "@type": "xsd:string"
+    },
+    "from": {
+      "@id": "cfengine:from",
+      "@type": "xsd:date"
+    },
+    "to": {
+      "@id": "cfengine:to",
+      "@type": "xsd:date"
+    },
+    "PostApiApiidResponse": "cfengine:PostApiApiidResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Cfengine API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Cfengine's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-08) from openapi/_ae-authored/cfengine-openapi-generated.yml.",
+  "dcterms:created": "2026-10-08",
+  "dcterms:source": [
+    "openapi/_ae-authored/cfengine-openapi-generated.yml"
+  ]
+}

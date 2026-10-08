@@ -1,0 +1,88 @@
+generated: '2026-10-08'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.cfengine.com/docs/lts/release-notes/
+sources:
+- https://docs.cfengine.com/docs/lts/release-notes/
+- https://docs.cfengine.com/docs/lts/release-notes/whatsnew/
+- https://docs.cfengine.com/docs/lts/release-notes/whatsnew/changelog-core/
+- https://docs.cfengine.com/docs/lts/release-notes/whatsnew/changelog-masterfiles-policy-framework/
+entries:
+- breaking: false
+  highlights:
+  - Enabled select_region to converge across multiple passes ( CFE-3866 )
+  - Fixed buffer overflow in the files promise
+  - Fixed memory leak in isreadable() policy function
+  - Fixed segfault when cf-secret print-headers is called without an encrypted file ( CFE-4647 )
+  version: 3.27.1
+- breaking: false
+  highlights:
+  - Added evaluation order option in body agent control ( ENT-13295 )
+  - Added findlocalgroups() policy function ( CFE-4550 )
+  - Added getgroupinfo() policy function ( CFE-4512 )
+  - Added getgroups() policy function ( ENT-12722 )
+  version: 3.27.0
+- breaking: false
+  highlights:
+  - Improved error message in abortbundleclasses, for example when there are no matches due to using a space in the regular expression ( CFE-4075
+    )
+  - Updated syntax description to include new protocol_version values ( CFE-4483 )
+  - Switched to using current process ID to investigate proc filesystem to workaround in-container non-root owned symlinks ( CFE-3429 )
+  - Modified getindices() to return positional index from a list ( CFE-2930 )
+  version: 3.26.0
+- breaking: false
+  highlights:
+  - Added http_port and getattr selinux permissions as needed for selinux policy on rhel-8 and rhel-9 ( ENT-12954 )
+  - Added feature class for libpam ( CFE-3371 )
+  - Added hardclasses for log levels notice, warning and error ( CFE-4126 )
+  - Added sys.cf_edition variable that keeps track of whether cfengine is community or enterprise. ( ENT-10078 )
+  version: 3.25.0
+- breaking: false
+  highlights:
+  - Added sys.cpusockets variable ( CFE-30 )
+  - Added sys.moduledir variable ( CFE-1484 )
+  - Added sys.keydir variable ( CFE-2822 )
+  - Added getbundlemetatags() policy function to get the list of metatags of a bundle, in the same manner as getclassmetatags and getvariablemetatags
+    ( CFE-4019 )
+  version: 3.24.0
+- breaking: false
+  highlights:
+  - Added is_type() policy function to check type of a variable ( CFE-3641 )
+  - Added useringroup() policy function that returns whether a user is a member of a group. ( ENT-12721 )
+  - Added findlocalusers() policy function that returns all the local users matching certain attributes ( CFE-2318 )
+  - Added hostswithgroup() policy function to get hosts from a group, selecting a specific field. This function is enterprise only ( ENT-11325
+    )
+  version: 3.23.0
+- breaking: false
+  highlights:
+  - Added isconnectable() policy function to check if a port is connectable within a time limit in seconds. ( ENT-10666 )
+  - Added an optional parameter strict for validjson and validdata policy functions. This makes the functions evaluate to false on json primitives.
+    ( CFE-4163 )
+  - Added missing “BEGIN meta promises” verbose logging ( CFE-2829 )
+  - Added option to print rsync performance stats in cf-net
+  version: 3.22.0
+- breaking: false
+  highlights:
+  - Added php-fpm systemd service files to enable http2 in Mission Portal ( ENT-11440 )
+  - Fixed an issue where rhel >8 packages would not have correct openssl dependency version ( ENT-12587 )
+  - Fixed a bug causing a file to be closed twice in CopyRegularFi
+  version: 3.21.0
+- breaking: false
+  highlights:
+  - Added default_directory_create_mode to body agent control ( CFE-4590 , ENT-13239 )
+  - Added cf-profile.py script for processing profiling output
+  - Added evaluation_order option in body file control ( CFE-4598 )
+  - Added tag derived-from-file to Alpine, Amazon Linux, Arch, Debian, EOS, Fedora/Red Hat, Gentoo, Mandrake/Mandriva, Manjaro, OpenVZ, Oracle
+    Linux, Oracle VM Server/Red Hat, Red Hat, Slackware, SuSE, Sun Cobalt, United Linux, VMware, Xen, have_aptitude, and other OS classes/variables
+    ( CFE-4531 )
+  version: 3.20.0
+- breaking: false
+  highlights:
+  - 'Security fixes: CVE-2026-24712 - Injection in CFEngine Policy Language: https://cfengine.com/blog/2026/cve-2026-24710-and-cve-2026-24711-and-cve-2026-24712/'
+  - Fixed potential buffer overflow when creating tables using the databases promise type ( ENT-13552 )
+  - Fixed buffer overflow in build XPath for edit_xml ( ENT-13550 )
+  - Fixed buffer overflow in cf-secret when using multiple keys of different sizes ( ENT-13591 )
+  version: 3.19.0
+scheme: Semantic versioning (major.minor.patch)
+current_version: 3.27.1
+docs: https://docs.cfengine.com/docs/lts/release-notes/

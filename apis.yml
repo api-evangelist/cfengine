@@ -1,23 +1,141 @@
 aid: cfengine
+
 name: Cfengine
-description: 'Cfengine is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cfengine.com/images/previews/logo_wide_opengraph.png
+
+description: Cfengine provides infrastructure automation, security, and compliance solutions for large-scale environments. Offering both open
+  source and commercial editions, it enables configuration management, CI/CD integration, and policy compliance across Linux and Windows systems.
+  The platform includes AI‑assisted insights, extensive policy libraries, and a web UI for monitoring and reporting, serving enterprises worldwide.
+
 url: https://raw.githubusercontent.com/api-evangelist/cfengine/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-08 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-07'
+
 modified: '2026-10-07'
+
 tags:
 - Company
-apis: []
+- Automation
+- Infrastructure
+- Security
+- Compliance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/cfengine-rules.yml
+- type: JSONLD
+  url: json-ld/cfengine-context.jsonld
+- type: Vocabulary
+  url: vocabulary/cfengine-vocabulary.yml
+- type: DataModel
+  url: data-model/cfengine-data-model.yml
+- type: CLI
+  url: cli/cfengine-cli.yml
+- type: ChangeLog
+  url: changelog/cfengine-changelog.yml
+- type: Compliance
+  url: https://cfengine.com/solutions/security-automation/
+- type: Authentication
+  url: authentication/cfengine-authentication.yml
+- type: Conformance
+  url: conformance/cfengine-conformance.yml
+- type: SecurityTxt
+  url: well-known/cfengine-security.txt
+- type: SecurityTxt
+  url: well-known/cfengine-northerntech-security.txt
+- type: SecurityTxt
+  url: well-known/cfengine-docs-security.txt
+- type: SecurityTxt
+  url: well-known/cfengine-build-security.txt
+- type: WellKnown
+  url: well-known/cfengine-well-known.yml
+- type: Hosts
+  url: hosts/cfengine-hosts.yml
+- type: Security
+  url: https://cfengine.com/tags/security/
+- type: GitHubOrganization
+  url: https://github.com/cfengine
+- type: DeveloperPortal
+  url: https://cfengine.com/developers/
+- type: ChangeLog
+  url: https://docs.cfengine.com/docs/lts/release-notes/
+- type: APIReference
+  url: https://docs.cfengine.com/docs/lts/reference/
+- type: TrustCenter
+  url: security/cfengine-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/cfengine-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/cfengine-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/cfengine
+  url: https://cfengine.com
+- type: Documentation
+  url: https://docs.cfengine.com
+- type: Blog
+  url: https://cfengine.com/blog
+- type: GettingStarted
+  url: https://docs.cfengine.com/docs/lts/getting-started/
+- type: Support
+  url: https://cfengine.com/contact
+
+apis:
+- name: Cfengine API
+  description: API reference for Cfengine automation platform
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: null
+  properties: []
+  aid: cfengine:cfengine-api-2
+- aid: cfengine:cfengine-api
+  name: Cfengine API
+  description: 'Cfengine API as documented publicly: 44 operations. Contract generated from the documentation by API Evangelist (2026-10-08);
+
+    not the provider''s own document.'
+  humanURL: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref
+  baseURL: https://hub.cfengine.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/cfengine-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine‑readable contract was found on the API host or documentation site.
+  evidence:
+  - url: https://api.cfengine.com/openapi.json
+    status: 0
+  checked: '2026-10-08'
+x-enrichment:
+  date: '2026-10-08'
+  status: enriched
+  artifacts_added: 27
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
