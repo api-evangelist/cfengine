@@ -1,0 +1,139 @@
+openapi: 3.2.0
+info:
+  title: Cfengine Inventory API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 44 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Cfengine has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 42
+    documentation: 2
+    pages-with-code: 8
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/host
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ai-chat
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/cmdb-api
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/web-rbac
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/build-api
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/inventory
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/users-rbac
+servers:
+- url: https://hub.cfengine.com
+security:
+- api_token: []
+- Basic: []
+- Bearer: []
+tags:
+- name: Inventory
+paths:
+  /api/inventory/attributes-dictionary:
+    get:
+      operationId: get_api_inventory_attributes_dictionary
+      tags:
+      - Inventory
+      summary: GET /api/inventory/attributes-dictionary
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/inventory
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiInventoryAttributesDictionaryResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -k --user admin:admin -X GET https://hub.cfengine.com/api/inventory/attributes-dictionary \n Example response: \n [\n {\n \"id\": 2,\n \"attribute_name\": \"BIOS vendor\",\n \"category\": \"Hardware\",\n \"readonly\": 1,\n \"type\": \"string\",\n \"convert_function\": null,\n \"keyname\": \"default.cfe_autorun_inventory_dmidecode.dmi[bios-vendor]\"\n },\n {\n \"id\": 3,\n \"attribute_name\": \"BIOS version\",\n \"category\": \"Hardware\","
+  /api/inventory/attributes-dictionary/{attributesdictionaryid}:
+    patch:
+      operationId: patch_api_inventory_attributes_dictionary_attributesdictionaryid
+      tags:
+      - Inventory
+      summary: PATCH /api/inventory/attributes-dictionary/{attributesDictionaryId}
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/inventory
+      parameters:
+      - name: attributesdictionaryid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchApiInventoryAttributesDictionaryAttributesdictionaryidR'
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PatchApiInventoryAttributesDictionaryAttributesdictionaryidR2'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -k --user admin:admin -X PATCH https://hub.cfengine.com/api/inventory/attributes-dictionary/260 -H 'content-type: application/json' -d '{\n \"category\":\"Hardware\",\n \"type\": \"int\"\n }' \n Example Request Body: \n {\n \"category\":\"Hardware\",\n \"type\": \"int\"\n} \n Example response: \n {\n \"id\": 1,\n \"attribute_name\": \"Architecture\",\n \"category\": \"Hardware\",\n \"readonly\": 0,\n \"type\": \"slist\",\n \"convert_functio"
+components:
+  schemas:
+    PatchApiInventoryAttributesDictionaryAttributesdictionaryidR2:
+      type: object
+      properties:
+        id:
+          type: integer
+        attribute_name:
+          type: string
+        category:
+          type: string
+        readonly:
+          type: integer
+        type:
+          type: string
+        convert_function:
+          type: string
+    GetApiInventoryAttributesDictionaryResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        attribute_name:
+          type: string
+        category:
+          type: string
+        readonly:
+          type: integer
+        type:
+          type: string
+        convert_function:
+          type:
+          - string
+          - 'null'
+        keyname:
+          type: string
+    PatchApiInventoryAttributesDictionaryAttributesdictionaryidR:
+      type: object
+      properties:
+        category:
+          type: string
+        type:
+          type: string
+  securitySchemes:
+    api_token:
+      type: apiKey
+      in: header
+      name: Authorization
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
+    Basic:
+      type: http
+      scheme: basic
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
+    Bearer:
+      type: http
+      scheme: bearer
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/

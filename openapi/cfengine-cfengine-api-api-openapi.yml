@@ -1,0 +1,145 @@
+openapi: 3.2.0
+info:
+  title: Cfengine API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 44 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Cfengine has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 42
+    documentation: 2
+    pages-with-code: 8
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/host
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ai-chat
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/cmdb-api
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/web-rbac
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/build-api
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/inventory
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/users-rbac
+servers:
+- url: https://hub.cfengine.com
+security:
+- api_token: []
+- Basic: []
+- Bearer: []
+tags:
+- name: Cfengine API
+paths:
+  /api/{apiid}:
+    get:
+      operationId: get_api_apiid
+      tags:
+      - Cfengine API
+      summary: GET /api/rbac
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/web-rbac
+      parameters:
+      - name: apiid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiApiidResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -k --user <username>:<password>  -X GET  https://hub.cfengine.com/api/rbac \n Example response: \n [\n {\n \"alias\": \"Inventory.post\",\n \"group\": \"Inventory API\",\n \"name\": \"Get inventory report\",\n \"description\": \"\",\n \"application\": \"API\",\n \"allowed_by_default\": true\n },\n {\n \"alias\": \"VariablesDictionary.get\",\n \"group\": \"Inventory API\",\n \"name\": \"Get inventory attributes\",\n \"description\": \"\",\n \"appl"
+        collapsed_from: 4 example path(s) differing only at apiId
+    post:
+      operationId: post_api_apiid
+      tags:
+      - Cfengine API
+      summary: POST /api/host-count
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/host
+      parameters:
+      - name: apiid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiApiidRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiApiidResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -k --user admin:admin -X POST https://hub.cfengine.com/api/host-count -H 'content-type: application/json' -d '{\"period\": \"month\", \"from\": \"2017-11-28\", \"to\" : \"2017-12-06\"}' \n Example response: \n HTTP 200 Ok\n{\n \"period\": \"month\",\n \"data\": [\n {\n \"date\": \"Nov 2017\",\n \"count\": 0\n },\n {\n \"date\": \"Dec 2017\",\n \"count\": 15\n }\n ]\n} \n Output : \n period \nPeriod of grouping the data. Allowed values: day"
+        collapsed_from: 3 example path(s) differing only at apiId
+components:
+  schemas:
+    PostApiApiidResponse:
+      type: object
+      properties:
+        period:
+          type: string
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              date:
+                type: string
+              count:
+                type: integer
+    GetApiApiidResponse:
+      type: object
+      properties:
+        alias:
+          type: string
+        group:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        application:
+          type: string
+        allowed_by_default:
+          type: boolean
+    PostApiApiidRequest:
+      type: object
+      properties:
+        period:
+          type: string
+        from:
+          type: string
+          format: date
+        to:
+          type: string
+          format: date
+  securitySchemes:
+    api_token:
+      type: apiKey
+      in: header
+      name: Authorization
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
+    Basic:
+      type: http
+      scheme: basic
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
+    Bearer:
+      type: http
+      scheme: bearer
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/

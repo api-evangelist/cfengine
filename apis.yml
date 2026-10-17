@@ -101,17 +101,16 @@ apis:
   baseURL: null
   properties: []
   aid: cfengine:cfengine-api-2
-- aid: cfengine:cfengine-api
-  name: Cfengine API
-  description: 'Cfengine API as documented publicly: 44 operations. Contract generated from the documentation by API Evangelist (2026-10-08);
-
-    not the provider''s own document.'
-  humanURL: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref
+- aid: cfengine:cfengine-ai-api
+  name: Cfengine AI API
+  description: The Ai API from Cfengine — 1 operation(s) for ai.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
   baseURL: https://hub.cfengine.com
+  tags:
+  - Ai
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/cfengine-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/cfengine-ai-api-openapi.yml
   - type: JSONSchema
     url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
   - type: JSONSchema
@@ -124,7 +123,182 @@ apis:
     url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
   - type: JSONSchema
     url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
-
+- aid: cfengine:cfengine-build-api
+  name: Cfengine Build API
+  description: The Build API from Cfengine — 9 operation(s) for build.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: https://hub.cfengine.com
+  tags:
+  - Build
+  properties:
+  - type: OpenAPI
+    url: openapi/cfengine-build-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
+- aid: cfengine:cfengine-cfengine-api-api
+  name: Cfengine Cfengine API
+  description: The Cfengine API API from Cfengine — 1 operation(s) for cfengine api.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: https://hub.cfengine.com
+  tags:
+  - Cfengine API
+  properties:
+  - type: OpenAPI
+    url: openapi/cfengine-cfengine-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
+- aid: cfengine:cfengine-cmdb-api
+  name: Cfengine Cmdb API
+  description: The Cmdb API from Cfengine — 3 operation(s) for cmdb.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: https://hub.cfengine.com
+  tags:
+  - Cmdb
+  properties:
+  - type: OpenAPI
+    url: openapi/cfengine-cmdb-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
+- aid: cfengine:cfengine-hosts-api
+  name: Cfengine Hosts API
+  description: The Hosts API from Cfengine — 6 operation(s) for hosts.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: https://hub.cfengine.com
+  tags:
+  - Hosts
+  properties:
+  - type: OpenAPI
+    url: openapi/cfengine-hosts-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
+- aid: cfengine:cfengine-inventory-api
+  name: Cfengine Inventory API
+  description: The Inventory API from Cfengine — 2 operation(s) for inventory.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: https://hub.cfengine.com
+  tags:
+  - Inventory
+  properties:
+  - type: OpenAPI
+    url: openapi/cfengine-inventory-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
+- aid: cfengine:cfengine-rbac-api
+  name: Cfengine Rbac API
+  description: The Rbac API from Cfengine — 1 operation(s) for rbac.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: https://hub.cfengine.com
+  tags:
+  - Rbac
+  properties:
+  - type: OpenAPI
+    url: openapi/cfengine-rbac-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
+- aid: cfengine:cfengine-role-api
+  name: Cfengine Role API
+  description: The Role API from Cfengine — 2 operation(s) for role.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: https://hub.cfengine.com
+  tags:
+  - Role
+  properties:
+  - type: OpenAPI
+    url: openapi/cfengine-role-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
+- aid: cfengine:cfengine-user-api
+  name: Cfengine User API
+  description: The User API from Cfengine — 2 operation(s) for user.
+  humanURL: https://docs.cfengine.com/docs/lts/reference/
+  baseURL: https://hub.cfengine.com
+  tags:
+  - User
+  properties:
+  - type: OpenAPI
+    url: openapi/cfengine-user-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/cfengine-delete-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-buildid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-patch-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-post-api-build-projects1-modules-autorun-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun100-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cfengine-get-api-build-modules-autorun-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

@@ -1,0 +1,326 @@
+openapi: 3.2.0
+info:
+  title: Cfengine Role API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 44 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Cfengine has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 42
+    documentation: 2
+    pages-with-code: 8
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/host
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ai-chat
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/cmdb-api
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/web-rbac
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/build-api
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/inventory
+  - https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/users-rbac
+servers:
+- url: https://hub.cfengine.com
+security:
+- api_token: []
+- Basic: []
+- Bearer: []
+tags:
+- name: Role
+paths:
+  /api/role/{roleId}:
+    delete:
+      operationId: delete_api_role_roleId
+      tags:
+      - Role
+      summary: Remove role definition
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/users-rbac
+      parameters:
+      - name: roleId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_role_roleId
+      tags:
+      - Role
+      summary: Get role definition
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/users-rbac
+      parameters:
+      - name: roleId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiRoleRoleidResponse'
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_api_role_roleId
+      tags:
+      - Role
+      summary: Update role definition
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/users-rbac
+      parameters:
+      - name: roleId
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiRoleRoleidRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_api_role_roleId
+      tags:
+      - Role
+      summary: Create a new role definition
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/users-rbac
+      parameters:
+      - name: roleId
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PutApiRoleRoleidRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/role/{roleName}/permissions:
+    delete:
+      operationId: delete_api_role_roleName_permissions
+      tags:
+      - Role
+      summary: Revoke permissions from role
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/web-rbac
+      parameters:
+      - name: roleName
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteApiRoleRolenamePermissionsResponse'
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_role_roleName_permissions
+      tags:
+      - Role
+      summary: Get role permissions
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/web-rbac
+      parameters:
+      - name: roleName
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiRoleRolenamePermissionsResponse'
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_api_role_roleName_permissions
+      tags:
+      - Role
+      summary: Add permissions to role
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/web-rbac
+      parameters:
+      - name: roleName
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiRoleRolenamePermissionsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiRoleRolenamePermissionsResponse'
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_api_role_roleName_permissions
+      tags:
+      - Role
+      summary: Rewrite role’s permissions
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/web-rbac
+      parameters:
+      - name: roleName
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PutApiRoleRolenamePermissionsRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PutApiRoleRolenamePermissionsResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostApiRoleRoleidRequest:
+      type: object
+      properties:
+        description:
+          type: string
+          description: Role description.
+        includeContext:
+          type: string
+          description: Permit access to hosts that have class set .
+        excludeContext:
+          type: string
+          description: Permit access to hosts that have class not set
+    PutApiRoleRolenamePermissionsResponse:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: HTTP 201 Created
+    PostApiRoleRolenamePermissionsRequest:
+      type: object
+      properties:
+        alias:
+          type: array
+          description: 'Array of permission aliases. Example: ["Inventory.post", "VariablesDictionary.get"]'
+      required:
+      - alias
+    PostApiRoleRolenamePermissionsResponse:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: HTTP 201 Created
+    GetApiRoleRoleidResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique role name.
+        description:
+          type: string
+          description: Role description.
+        includeContext:
+          type: string
+          description: Permit access to hosts that have class set .
+        excludeContext:
+          type: string
+          description: Permit access to hosts that have class not set .
+    PutApiRoleRoleidRequest:
+      type: object
+      properties:
+        description:
+          type: string
+          description: Role description.
+        includeContext:
+          type: string
+          description: Permit access to hosts that have class set .
+        excludeContext:
+          type: string
+          description: Permit access to hosts that have class not set .
+    GetApiRoleRolenamePermissionsResponse:
+      type: object
+      properties:
+        alias:
+          type: string
+          description: Alias (ID) of a permission
+        group:
+          type: string
+          description: Group of a permission.
+        name:
+          type: string
+          description: Name of a permission.
+        description:
+          type: string
+          description: Description of a permission.
+        application:
+          type: string
+          description: 'Application of a permission. Allowed values: API , Mission portal'
+        allowed_by_default:
+          type: boolean
+          description: Permission allowed by default. New role will be able to perform allowed by default actions.
+    DeleteApiRoleRolenamePermissionsResponse:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: HTTP 204 No Content
+    PutApiRoleRolenamePermissionsRequest:
+      type: object
+      properties:
+        alias:
+          type: array
+          description: 'Array of permission aliases. Example: ["Inventory.post", "VariablesDictionary.get"]'
+      required:
+      - alias
+  securitySchemes:
+    api_token:
+      type: apiKey
+      in: header
+      name: Authorization
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
+    Basic:
+      type: http
+      scheme: basic
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
+    Bearer:
+      type: http
+      scheme: bearer
+      x-source: https://docs.cfengine.com/docs/lts/api/enterprise-api-ref/ldap-api/
