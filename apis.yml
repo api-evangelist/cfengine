@@ -107,6 +107,8 @@ apis:
   humanURL: https://docs.cfengine.com/docs/lts/reference/
   baseURL: https://hub.cfengine.com
   tags:
+  - Artificial Intelligence
+  tags_raw:
   - Ai
   properties:
   - type: OpenAPI
@@ -129,6 +131,8 @@ apis:
   humanURL: https://docs.cfengine.com/docs/lts/reference/
   baseURL: https://hub.cfengine.com
   tags:
+  - Builds
+  tags_raw:
   - Build
   properties:
   - type: OpenAPI
@@ -173,6 +177,8 @@ apis:
   humanURL: https://docs.cfengine.com/docs/lts/reference/
   baseURL: https://hub.cfengine.com
   tags:
+  - CMDB
+  tags_raw:
   - Cmdb
   properties:
   - type: OpenAPI
@@ -239,6 +245,8 @@ apis:
   humanURL: https://docs.cfengine.com/docs/lts/reference/
   baseURL: https://hub.cfengine.com
   tags:
+  - RBAC
+  tags_raw:
   - Rbac
   properties:
   - type: OpenAPI
