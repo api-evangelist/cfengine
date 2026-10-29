@@ -64,5 +64,127 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cfengine is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/cfengine
+Cfengine provides infrastructure automation, security, and compliance solutions for large-scale environments. Offering both open source and commercial editions, it enables configuration management, CI/CD integration, and policy compliance across Linux and Windows systems. The platform includes AI‑assisted insights, extensive policy libraries, and a web UI for monitoring and reporting, serving enterprises worldwide.
+
+**Areas:** Company · Automation · Infrastructure · Security · Compliance
+
+## Cfengine on APIs.io
+
+Everything profiled for Cfengine is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cfengine/](https://apis.io/providers/cfengine/)** — or go straight to one of the APIs or properties below.
+
+### APIs (10)
+
+- [Cfengine API](https://apis.io/apis/cfengine/cfengine-api-2/) — API reference for Cfengine automation platform
+- [Cfengine AI API](https://apis.io/apis/cfengine/cfengine-ai-api/) — The Ai API from Cfengine — 1 operation(s) for ai.
+- [Cfengine Build API](https://apis.io/apis/cfengine/cfengine-build-api/) — The Build API from Cfengine — 9 operation(s) for build.
+- [Cfengine Cfengine API](https://apis.io/apis/cfengine/cfengine-cfengine-api-api/) — The Cfengine API API from Cfengine — 1 operation(s) for cfengine api.
+- [Cfengine Cmdb API](https://apis.io/apis/cfengine/cfengine-cmdb-api/) — The Cmdb API from Cfengine — 3 operation(s) for cmdb.
+- [Cfengine Hosts API](https://apis.io/apis/cfengine/cfengine-hosts-api/) — The Hosts API from Cfengine — 6 operation(s) for hosts.
+- [Cfengine Inventory API](https://apis.io/apis/cfengine/cfengine-inventory-api/) — The Inventory API from Cfengine — 2 operation(s) for inventory.
+- [Cfengine Rbac API](https://apis.io/apis/cfengine/cfengine-rbac-api/) — The Rbac API from Cfengine — 1 operation(s) for rbac.
+- [Cfengine Role API](https://apis.io/apis/cfengine/cfengine-role-api/) — The Role API from Cfengine — 2 operation(s) for role.
+- [Cfengine User API](https://apis.io/apis/cfengine/cfengine-user-api/) — The User API from Cfengine — 2 operation(s) for user.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [DeleteApiBuildProjects1ModulesAutorunResponse](https://apis.io/schemas/cfengine/cfengine-delete-api-build-projects1-modules-autorun-response/)
+- [GetApiBuildBuildidResponse](https://apis.io/schemas/cfengine/cfengine-get-api-build-buildid-response/)
+- [GetApiBuildModulesAutorunResponse](https://apis.io/schemas/cfengine/cfengine-get-api-build-modules-autorun-response/)
+- [GetApiBuildModulesAutorun100Response](https://apis.io/schemas/cfengine/cfengine-get-api-build-modules-autorun100-response/)
+- [PatchApiBuildProjects1ModulesAutorunResponse](https://apis.io/schemas/cfengine/cfengine-patch-api-build-projects1-modules-autorun-response/)
+- [PostApiBuildProjects1ModulesAutorunResponse](https://apis.io/schemas/cfengine/cfengine-post-api-build-projects1-modules-autorun-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Cfengine Context](https://apis.io/jsonld/cfengine/cfengine-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Cfengine API Rules](https://apis.io/rules/cfengine/cfengine-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cfengine Authentication](https://apis.io/security/cfengine/cfengine-authentication/)
+- [Cfengine Domain Security](https://apis.io/security/cfengine/cfengine-domain-security/)
+- [Cfengine Trust Center](https://apis.io/security/cfengine/cfengine-trust-center/)
+- [Cfengine Vulnerability Disclosure](https://apis.io/security/cfengine/cfengine-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cfengine.com)
+- [Documentation](https://docs.cfengine.com)
+- [Getting started](https://docs.cfengine.com/docs/lts/getting-started/)
+- [API reference](https://docs.cfengine.com/docs/lts/reference/)
+- [Support](https://cfengine.com/contact)
+- [Changelog](https://docs.cfengine.com/docs/lts/release-notes/)
+- [Blog](https://cfengine.com/blog)
+- [Security](https://cfengine.com/tags/security/)
+- [Compliance](https://cfengine.com/solutions/security-automation/)
+- [GitHub](https://github.com/cfengine)
+
+## API Evangelist rating
+
+**Kin Score 36.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 26.1 |
+| Contract governance | 22.0 |
+| Operational transparency | 31.6 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 15.8 |
+
+**Agent readiness 22.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 27.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cfengine/](https://apis.io/providers/cfengine/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cfengine: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cfengine/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
